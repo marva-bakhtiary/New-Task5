@@ -1,4 +1,9 @@
 @import "~antd/dist/antd.less";
-@import "~tailwindcss/base.css";
-@import "~tailwindcss/components.css";
-@import "~tailwindcss/utilities.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    @apply bg-slate-100 leading-8 overflow-x-hidden m-0 p-0 font-sans;
+  }
+}
