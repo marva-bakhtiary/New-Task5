@@ -14,11 +14,6 @@ describe("Input Testing", () => {
     userEvent.click(input);
     expect(input).toHaveFocus();
   });
-  test("check the default value", () => {
-    render(<Input />);
-    const input = screen.getByTestId("initial-input");
-    expect(input).toHaveValue("0");
-  });
 
   test("inputs header rendering", () => {
     render(<Input />);
@@ -38,7 +33,6 @@ describe("Input Testing", () => {
   test("input gets the correct value", () => {
     render(<Input />);
     const input = screen.getByTestId("initial-input");
-    userEvent.clear(input);
     userEvent.type(input, "123");
     expect(input).toHaveValue("123");
   });

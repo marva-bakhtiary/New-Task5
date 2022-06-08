@@ -11,7 +11,6 @@ const Input = () => {
         data-testid="initial-input"
         className="rounded-lg w-56 ml-[30%]"
         maxLength={10}
-        defaultValue={0}
         prefix={<EditOutlined />}
       />
     </>
