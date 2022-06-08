@@ -34,4 +34,12 @@ describe("Input Testing", () => {
     });
     expect(header).toHaveClass("ml-[20%] mt-4");
   });
+
+  test("input gets the correct value", () => {
+    render(<Input />);
+    const input = screen.getByTestId("initial-input");
+    userEvent.clear(input);
+    userEvent.type(input, "123");
+    expect(input).toHaveValue("123");
+  });
 });

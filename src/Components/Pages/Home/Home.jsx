@@ -4,6 +4,7 @@ import React from "react";
 import Button from "../../UI/Atoms/Button/Button";
 import Input from "../../UI/Atoms/Input/Input";
 import TotalBadge from "../../UI/Atoms/TotalBadge/TotalBadge";
+import InputsGroup from "../../UI/Molecules/InputsGroup/InputsGroup";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
         expenses
       </Tag>
       <TotalBadge>1,000,000</TotalBadge>
+      <InputsGroup />
     </div>
   );
 }
