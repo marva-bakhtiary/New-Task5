@@ -1,9 +1,10 @@
 import React from "react";
 import { Button as AntButton } from "antd";
 
-const Button = () => {
+const Button = ({ Click }) => {
   return (
     <AntButton
+      onClick={Click}
       className="rounded-lg text-center mt-10 text-white"
       type="primary"
       size="middle"
